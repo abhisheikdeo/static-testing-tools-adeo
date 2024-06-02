@@ -3,9 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "lint": "eslint --ignore-pattern .gitignore ./src"
+  },
   "keywords": [],
-  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "author": "Kent C. Dodds <kent@doddsfamily.us> (https://kentcdodds.com/)",
   "license": "MIT",
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/cli": "^7.24.6",
+    "@babel/core": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
+    "@eslint/js": "^9.4.0",
+    "eslint": "^9.4.0",
+    "globals": "^15.3.0"
+  }
 }
